@@ -1,0 +1,3 @@
+bucket  = "amazeddev-tfstate"
+key     = "gonotes.tfstate"
+region  = "eu-central-1"
