@@ -15,8 +15,8 @@ FROM alpine:latest
 
 WORKDIR /app
 
-RUN mkdir ./static
-COPY ./static ./static
+# RUN mkdir ./static
+# COPY ./static ./static
 
 COPY --from=build /build/app .
 

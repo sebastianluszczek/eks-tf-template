@@ -9,6 +9,10 @@ import (
 func SetupRoutes(app *fiber.App) {
 	router := app.Group("/api")
 
+	router.Get("/ping", func(c *fiber.Ctx) error {
+    return c.SendString("pong...!")
+  })
+
 	note := router.Group("/note")
 	// Create a Note
 	note.Post("/", controller.CreateNote)
