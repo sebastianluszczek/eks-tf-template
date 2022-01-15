@@ -37,6 +37,8 @@ jobs:
   build-image:
     name: Build Image
     runs-on: ubuntu-latest
+    needs:
+      - create-ecr
 
     steps:
       - name: Check out code

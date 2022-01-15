@@ -10,7 +10,7 @@ resource "aws_ecr_repository" "ecr" {
     scan_on_push = true
   }
     
-    tags = {
+  tags = {
     Env = "dev"
   }
 
