@@ -8,10 +8,10 @@ resource "aws_ecr_repository" "ecr" {
 
   image_scanning_configuration {
     scan_on_push = true
- }
-  
-  tags = {
-   Env = "dev"
- }
+  }
+    
+    tags = {
+    Env = "dev"
+  }
 
 }
